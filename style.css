@@ -1,0 +1,53 @@
+/* Declare Variables */
+:root {
+  --primary-color: #e02c6d;
+  --primary-text: #3a3a3a;
+  --secondary-text: #787885;
+  --h1-font: 3.25rem; /* 52px */
+  --h2-font: 2.5rem; /* 40px */
+  --h3-font: 1.75rem; /* 28px */
+  --h4-font: 1.5rem; /* 24px */
+}
+
+/* Shared Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Styles */
+header {
+  padding: 5rem 7.5rem 0;
+}
+
+/* Navbar Styles */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li > * {
+  margin-left: 10px;
+  padding: 10px 12px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+.brand {
+  font-size: var(--h4-font);
+}
