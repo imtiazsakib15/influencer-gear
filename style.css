@@ -25,6 +25,21 @@ a {
   text-decoration: none;
 }
 
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 41px;
+  padding: 14px 28px;
+  border: none;
+  font-weight: 700;
+  margin-top: 1rem;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
 /* Header Styles */
 header {
   padding: 5rem 7.5rem 0;
@@ -50,4 +65,30 @@ header nav ul li > * {
 }
 .brand {
   font-size: var(--h4-font);
+}
+
+/* Banner Styles */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 8rem;
+}
+
+.banner-title {
+  color: var(--primary-text);
+  font-size: var(--h1-font);
+}
+
+.banner-description {
+  color: var(--secondary-text);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.banner-img {
+  background-image: url(images/circle-design.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
