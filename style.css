@@ -48,6 +48,10 @@ img {
   cursor: pointer;
 }
 
+.section-title {
+  font-size: var(--h2-font);
+}
+
 /* Header Styles */
 header {
   width: 85%;
@@ -124,7 +128,6 @@ header {
   padding: 2.5rem;
   border-top: 1px solid rgba(128, 128, 128, 0.2);
   border-bottom: 1px solid rgba(128, 128, 128, 0.2);
-  margin-bottom: 5rem;
 }
 .where-to-buy > div {
   display: flex;
@@ -133,4 +136,46 @@ header {
 }
 .logo-img {
   width: 80px;
+}
+
+/* Popular Collection */
+.popular-collection {
+  width: 75%;
+  margin: 6rem auto;
+  text-align: center;
+}
+.popular-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  gap: 2rem;
+  text-align: left;
+}
+.item {
+  padding: 1.4rem 1rem;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.item h3 {
+  font-size: var(--h3-font);
+  color: #18191f;
+  margin-top: 1rem;
+  font-weight: 500;
+  line-height: 40px;
+}
+.item h4 {
+  font-size: var(--h4-font);
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-top: 0.4rem;
+}
+.item p {
+  font-size: 0.9rem;
+  width: 70%;
+  color: var(--secondary-text);
+  font-family: "Inter", sans-serif;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  line-height: 143%;
 }
