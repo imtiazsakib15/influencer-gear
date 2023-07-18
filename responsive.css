@@ -1,0 +1,61 @@
+/* Media Query for <= 992px */
+@media screen and (max-width: 992px) {
+  header {
+    width: 90%;
+    margin: 4rem auto;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .where-to-buy {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .where-to-buy > div:nth-child(2n) {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/* Media Query for <= 768px */
+@media screen and (max-width: 768px) {
+  header {
+    margin: 2rem auto;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .banner-content,
+  .banner-img {
+    width: 100%;
+  }
+  .where-to-buy {
+    width: 90%;
+    border: none;
+  }
+  .where-to-buy > div:nth-child(2n) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .logo-img {
+    width: 70px;
+  }
+}
+
+/* Media Query for <= 576px */
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    margin: 1rem auto;
+  }
+  .nav-link {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-img {
+    width: 50px;
+  }
+}
